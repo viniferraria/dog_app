@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.black,
         appBar: AppBar(
           title: Text(
-            "Dogs :dog:",
+            "Dogs 🐶🐕",
             style: TextStyle(
             color: Colors.black,
           )),
@@ -58,7 +58,7 @@ class MyApp extends StatelessWidget {
             ),
         ],
           selectedItemColor: Colors.amber,
-          unselectedItemColor: Colors.black,
+          unselectedItemColor: Colors.grey,
           showSelectedLabels: false,
           showUnselectedLabels: false,
         )
@@ -67,17 +67,17 @@ class MyApp extends StatelessWidget {
   }
 }
 class DogName extends StatelessWidget{
- final String name;
- final String image;
- const DogName(this.name, this.image);
- @override
- Widget build(BuildContext context){
-   return DecoratedBox(
-     decoration: BoxDecoration(color: Colors.tealAccent),
-     child: Padding(
-       padding: const EdgeInsets.all(0.0),
-       child: Image.asset(image),
-     ),
-   );
- }
+  final String name;
+  final String image;
+  const DogName(this.name, this.image);
+  @override
+  Widget build(BuildContext context){
+    return DecoratedBox(
+      decoration: BoxDecoration(color: Colors.tealAccent),
+      child: Padding(
+        padding: const EdgeInsets.all(0.0),
+        child: Image.asset(image),
+      ),
+    );
+  }
 }
